@@ -1,0 +1,31 @@
+GET http://localhost:5017/games
+
+###
+GET http://localhost:5017/games/7
+
+### 
+POST http://localhost:5017/games
+Content-Type: application/json
+
+{
+    "name": "Game F",
+    "genreId": 1, 
+    "price": 49.99,
+    "releaseDate": "2022-10-01"
+}
+
+
+###
+PUT http://localhost:5017/games/1
+Content-Type: application/json
+
+{
+    "name": "FIFA",
+    "genreId": 1, 
+    "price": 59.99,
+    "releaseDate": "2022-10-01"
+}
+
+###
+DELETE http://localhost:5017/games/8
+
